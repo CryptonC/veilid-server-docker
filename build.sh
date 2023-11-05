@@ -1,1 +1,1 @@
-docker build -t veilid-server .
+docker build --no-cache -t veilid-server .
