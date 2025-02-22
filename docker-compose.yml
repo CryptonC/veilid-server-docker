@@ -4,3 +4,6 @@ services:
     restart: unless-stopped
     volumes:
       - ./db:/var/db/veilid-server/
+    ports:
+      - "5150:5150/tcp"
+      - "5150:5150/udp"
