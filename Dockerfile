@@ -2,7 +2,7 @@ FROM debian:latest
 
 # Install initial packages
 RUN apt update
-RUN apt install wget gpg -y
+RUN apt install wget gpg curl -y
 
 # Add GPG key and add repository
 RUN wget -O- https://packages.veilid.net/gpg/veilid-packages-key.public | gpg --dearmor -o /usr/share/keyrings/veilid-packages-keyring.gpg
